@@ -49,7 +49,7 @@ public class CarrierLabel extends TextView {
     private static boolean isCN;
     private int mCarrierFontSize = 14;
 
-    protected int mCarrierColor = getResources().getColor(R.color.kg_carrier_text);
+    protected int mCarrierColor = com.android.internal.R.color.white;
     Handler mHandler;
 
     class SettingsObserver extends ContentObserver {

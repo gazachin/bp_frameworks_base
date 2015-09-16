@@ -53,6 +53,5 @@
     <!-- Notification Header BG Color -->
     <color name="notification_header_bg">@color/system_secondary_color</color>
 
-    <color name="kg_carrier_text">#ffffffff</color>
 
 </resources>
