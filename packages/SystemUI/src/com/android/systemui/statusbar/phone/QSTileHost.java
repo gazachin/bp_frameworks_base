@@ -85,6 +85,7 @@ import com.android.systemui.qs.tiles.AppSideBarTile;
 import com.android.systemui.qs.tiles.ThemesTile;
 import com.android.systemui.qs.tiles.KernelAdiutorTile;
 import com.android.systemui.qs.tiles.BlissTile;
+import com.android.systemui.qs.tiles.SlimPieTile;
 import com.android.systemui.settings.CurrentUserTracker;
 import com.android.systemui.statusbar.CustomTileData;
 import com.android.systemui.statusbar.policy.BluetoothController;
@@ -421,6 +422,8 @@ public class QSTileHost implements QSTile.Host {
                 return new HeadsUpTile(this);
             case QSConstants.TILE_SLIMACTION:
                 return new SlimActionTile(this);
+            case QSConstants.TILE_SLIMPIE:
+                return new SlimPieTile(this);
             case QSConstants.TILE_HWKEYS:
                 return new HWKeysTile(this);
             case QSConstants.TILE_GESTURE:
