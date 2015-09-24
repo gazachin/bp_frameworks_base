@@ -75,7 +75,6 @@ import com.android.systemui.qs.tiles.VolumeTile;
 import com.android.systemui.qs.tiles.ScreenTimeoutTile;
 import com.android.systemui.qs.tiles.SyncTile;
 import com.android.systemui.qs.tiles.NavBarTile;
-import com.android.systemui.qs.tiles.HWKeysTile;
 import com.android.systemui.qs.tiles.AppCircleBarTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
 import com.android.systemui.qs.tiles.SlimFloatsTile;
@@ -424,8 +423,6 @@ public class QSTileHost implements QSTile.Host {
                 return new SlimActionTile(this);
             case QSConstants.TILE_SLIMPIE:
                 return new SlimPieTile(this);
-            case QSConstants.TILE_HWKEYS:
-                return new HWKeysTile(this);
             case QSConstants.TILE_GESTURE:
                 return new GestureTile(this);
             case QSConstants.TILE_AMBIENT_DISPLAY:
