@@ -224,9 +224,9 @@
             android:gravity="right"
             android:textColor="@color/status_bar_temperature_location_text_color"
             android:textSize="@dimen/weather_text_size"
-            android:importantForAccessibility="noHideDescendants" />
+            android:importantForAccessibility="noHideDescendants" 
             android:textAppearance="@style/TextAppearance.StatusBar.Expanded.WeatherLocation"
-            android:importantForAccessibility="noHideDescendants"/>
+            android:importantForAccessibility="noHideDescendants" />
     </LinearLayout>
 
     <include
