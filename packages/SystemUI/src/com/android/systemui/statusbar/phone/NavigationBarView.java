@@ -1756,6 +1756,10 @@ public class NavigationBarView extends LinearLayout implements BaseStatusBar.Nav
                 Settings.System.DIM_NAV_BUTTONS_TOUCH_ANYWHERE, 0,
                 UserHandle.USER_CURRENT) == 1);
 
+         mDoubleTapToSleep = (Settings.System.getIntForUser(resolver,
+                    Settings.System.DOUBLE_TAP_SLEEP_NAVBAR, 0,
+                    UserHandle.USER_CURRENT) == 1);
+
         String expDeskString = Settings.Global.getStringForUser(resolver,
                 Settings.Global.POLICY_CONTROL, UserHandle.USER_CURRENT);
         mIsExpandedDesktopOn = (expDeskString != null ?
