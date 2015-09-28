@@ -783,6 +783,7 @@ public class NavigationBarView extends LinearLayout implements BaseStatusBar.Nav
         Drawable d = ActionHelper.getActionIconImage(mContext, clickAction, iconUri, landscape);
 
         if (d != null) {
+            d.mutate();
             if (colorize && mNavBarButtonColorMode != 3
                     && !clickAction.equals(ActionConstants.ACTION_BACK)) {
                 d = ColorHelper.getColoredDrawable(d, mNavBarButtonColor);
@@ -1144,6 +1145,8 @@ public class NavigationBarView extends LinearLayout implements BaseStatusBar.Nav
             d = mContext.getResources().getDrawable(R.drawable.ic_ime_switcher_default);
         }
 
+        if (d != null) {
+            d.mutate();
         if (mNavBarButtonColorMode != 3) {
             if (d instanceof VectorDrawable) {
                 d.setTint(mNavBarButtonColor);
@@ -1152,6 +1155,7 @@ public class NavigationBarView extends LinearLayout implements BaseStatusBar.Nav
             }
         }
         v.setImageBitmap(ColorHelper.drawableToBitmap(d));
+        }
         v.setRippleColor(mRippleColor);
 
         return v;
