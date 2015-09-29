@@ -918,7 +918,7 @@ public class NetworkControllerImpl extends BroadcastReceiver
             int signalClustersLength = mSignalClusters.size();
             for (int i = 0; i < signalClustersLength; i++) {
                 mSignalClusters.get(i).setWifiIndicators(wifiVisible, getCurrentIconId(),
-                        getActivityIconId(ssidPresent), contentDescription);
+                mCurrentState.inetCondition, mWifiActivityIconId, contentDescription);
             }
         }
 
@@ -1282,7 +1282,8 @@ public class NetworkControllerImpl extends BroadcastReceiver
                 mSignalClusters.get(i).setMobileDataIndicators(
                         mCurrentState.enabled && !mCurrentState.airplaneMode,
                         getCurrentIconId(),
-                        getActivityIconId(mCurrentState.dataConnected),
+                        mCurrentState.inetCondition,
+                        mMobileActivityIconId,
                         typeIcon,
                         contentDescription,
                         dataContentDescription,
@@ -1890,10 +1891,10 @@ public class NetworkControllerImpl extends BroadcastReceiver
     }
 
     public interface SignalCluster {
-        void setWifiIndicators(boolean visible, int strengthIcon,
-                int activityIcon, String contentDescription);
+        void setWifiIndicators(boolean visible, int strengthIcon, int inetCondition, int activityIcon,
+                String contentDescription);
 
-        void setMobileDataIndicators(boolean visible, int strengthIcon, int activityIcon,
+        void setMobileDataIndicators(boolean visible, int strengthIcon, int inetCondition, int activityIcon,
                 int typeIcon, String contentDescription, String typeContentDescription,
                 boolean isTypeIconWide, boolean showRoamingIndicator, int subId);
         void setSubs(List<SubscriptionInfo> subs);
