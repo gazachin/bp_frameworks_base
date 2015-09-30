@@ -3967,6 +3967,16 @@ public final class Settings {
         public static final String STATUS_BAR_EXPANDED_HEADER_SHOW_WEATHER = "status_bar_expanded_header_show_weather";
 
         /**
+         * Colors used for the color picker panel puttons
+         * 0: Bliss colors
+         * 1: Material colors
+         * 2: RGB colors
+         * default: 0
+         * @hide
+         */
+        public static final String COLOR_PICKER_PALETTE = "color_picker_palette";
+
+        /**
          * Whether to show the weather location on the header of the expanded status bar
          * @hide
          */
