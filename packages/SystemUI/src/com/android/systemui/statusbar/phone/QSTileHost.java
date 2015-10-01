@@ -74,6 +74,7 @@ import com.android.systemui.qs.tiles.ScreenrecordTile;
 import com.android.systemui.qs.tiles.VolumeTile;
 import com.android.systemui.qs.tiles.ScreenTimeoutTile;
 import com.android.systemui.qs.tiles.SyncTile;
+import com.android.systemui.qs.tiles.FastChargeTile;
 import com.android.systemui.qs.tiles.NavBarTile;
 import com.android.systemui.qs.tiles.AppCircleBarTile;
 import com.android.systemui.qs.tiles.UsbTetherTile;
@@ -365,6 +366,8 @@ public class QSTileHost implements QSTile.Host {
                 return new NotificationsTile(this);
             case QSConstants.TILE_DATA:
                 return new DataTile(this);
+            case QSConstants.TILE_FASTCHARGE:
+                return new FastChargeTile(this);
             case QSConstants.TILE_ROAMING:
                 return new RoamingTile(this);
             case QSConstants.TILE_DDS:

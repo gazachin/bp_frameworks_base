@@ -71,6 +71,7 @@ public class QSConstants {
     public static final String TILE_KERNEL_ADIUTOR = "kernel_adiutor";
     public static final String TILE_BLISS = "bliss_settings";
     public static final String TILE_SLIMPIE = "toggleSlimPie";
+    public static final String TILE_FASTCHARGE = "toggleFastCharge";
 
     public static final String DYNAMIC_TILE_NEXT_ALARM = "next_alarm";
     public static final String DYNAMIC_TILE_IME_SELECTOR = "ime_selector";
@@ -132,6 +133,7 @@ public class QSConstants {
         STATIC_TILES_AVAILABLE.add(TILE_KERNEL_ADIUTOR);
         STATIC_TILES_AVAILABLE.add(TILE_BLISS);
         STATIC_TILES_AVAILABLE.add(TILE_SLIMPIE);
+        STATIC_TILES_AVAILABLE.add(TILE_FASTCHARGE);
 
         DYNAMIC_TILES_AVAILABLE.add(DYNAMIC_TILE_NEXT_ALARM);
         DYNAMIC_TILES_AVAILABLE.add(DYNAMIC_TILE_IME_SELECTOR);

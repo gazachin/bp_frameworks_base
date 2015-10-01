@@ -181,4 +181,9 @@
     <string name="quick_settings_expanded_hide_navigation">Hide navigation bar</string>
     <string name="quick_settings_expanded_hide_both">Hide both</string>
     <string name="accessibility_quick_settings_expanded_desktop_off">Expanded desktop disabled</string>
+
+    <!-- QuickSettings: Fast Charge -->
+    <string name="quick_settings_fcharge_on">Fast Charge</string>
+    <string name="quick_settings_fcharge_off">Disabled</string>
+
 </resources>
