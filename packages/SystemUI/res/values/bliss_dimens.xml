@@ -79,7 +79,4 @@
     <!-- Quick settings bar -->
     <dimen name="qs_button_size">64dp</dimen>
 
-    <!-- Heads up -->
-    <dimen name="heads_up_bottom_gap">5dp</dimen>
-
 </resources>

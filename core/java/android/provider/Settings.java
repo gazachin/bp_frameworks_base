@@ -4459,13 +4459,6 @@ public final class Settings {
         public static final String HEADS_UP_DISMISS_ON_REMOVE = "heads_up_dismiss_on_remove";
 
         /**
-         * Whether heads up notification is shown on the bottom of the screen (default = disabled)
-         *
-         * @hide
-         */
-        public static final String HEADS_UP_GRAVITY_BOTTOM = "heads_up_gravity_bottom";
-
-        /**
          * Hide notification 1 second after touching outside
          * @hide
          */
