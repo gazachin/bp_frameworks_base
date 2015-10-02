@@ -5604,12 +5604,6 @@ public final class Settings {
         public static final String LOCKSCREEN_BLUR_RADIUS = "lockscreen_blur_radius";
 
         /**
-         * Custom No notifications text
-         * @hide
-         */
-        public static final String EMPTY_SHADE_TEXT = "empty_shade_text";
-
-        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
