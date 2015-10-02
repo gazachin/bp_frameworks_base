@@ -63,8 +63,10 @@ public class EmptyShadeView extends StackScrollerDecorView {
     protected void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         updateText();
-        ((TextView) findViewById(R.id.no_notifications)).setText(customText);
-    }
+        if ((customText) findViewById(R.id.no_notifications)).setText(customText);      } else {
+        ((TextView) findViewById(R.id.no_notifications)).setText(R.string.empty_shade_text); 
+     } 
+ }
 
     @Override
     protected View findContentView() {

@@ -732,7 +732,9 @@ public class NotificationPanelView extends PanelView implements
             return false;
         }
  
-       if (mDoubleTapToSleepEnabled && mStatusBarState == StatusBarState.KEYGUARD) {
+        if (mDoubleTapToSleepEnabled
+                && mStatusBarState == StatusBarState.KEYGUARD
+                && event.getY() < mStatusBarHeaderHeight) {
             mDoubleTapGesture.onTouchEvent(event);
         } else if (mDoubleTapToSleepAnywhere
                 && mStatusBarState == StatusBarState.KEYGUARD) {
